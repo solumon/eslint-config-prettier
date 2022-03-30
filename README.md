@@ -1,39 +1,29 @@
-# @vue/eslint-config-prettier
+# @solumon/eslint-config-prettier
 
-> eslint-config-prettier for Vue
+> fork from [@vue/eslint-config-prettier](https://github.com/vuejs/eslint-config-prettier)
 
-This config is specifically designed to be used by `@vue/cli` & `create-vue` setups
-and is not meant for outside use (it can be used but some adaptations
-on the user side might be needed - for details see the config file).
 
-A part of its design is that this config may implicitly depend on
-other parts of `@vue/cli`/`create-vue` setups.
-
-## Installation
-
-In order to work around [a known limitation in ESLint](https://github.com/eslint/eslint/issues/3458), we recommend you to use this package alongside `@rushstack/eslint-patch`, so that you don't have to install too many dependencies:
-
+## 安装
 ```sh
-npm add --dev @vue/eslint-config-prettier @rushstack/eslint-patch
+npm i -D  @solumon/eslint-config-prettier
 ```
 
-Please also make sure that you have `prettier` and `eslint` installed.
+> 确保你已经安装过 `prettier` 和 `eslint`.
 
-## Usage
+## 使用
 
-Add `"@vue/eslint-config-prettier"` to the `"extends"` array in your `.eslintrc.cjs` file. Make sure to put it **last**, so it gets the chance to override other configs.
+添加 `"@solumon/eslint-config-prettier"` 到ESlint配置文件 `"extends"` 字段中
 
 ```js
-require("@rushstack/eslint-patch/modern-module-resolution")
 
 module.exports = {
   extends: [
     // ... other configs
-    "@vue/eslint-config-prettier"
+    "@solumon/eslint-config-prettier"
   ]
 }
 ```
 
-## Further Reading
+## 了解
 
-The default config is based on the recommended configuration of [`eslint-plugin-prettier`](https://github.com/prettier/eslint-plugin-prettier/#recommended-configuration), which also depends on [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier). Please refer to their corresponding documentations for more implementation details.
+该配置默认使用 [`eslint-plugin-prettier`](https://github.com/prettier/eslint-plugin-prettier/#recommended-configuration) 推荐配置。
