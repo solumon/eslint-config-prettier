@@ -1,6 +1,6 @@
 # @solumon/eslint-config-prettier
 
-> fork from [@vue/eslint-config-prettier](https://github.com/vuejs/eslint-config-prettier)
+> forked from [@vue/eslint-config-prettier](https://github.com/vuejs/eslint-config-prettier)
 
 
 ## 安装
